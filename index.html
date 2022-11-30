@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <meta name ="viewport"content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./homePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./responsoveHomePage.css">
+</head>
+<body id="body">
+    <div class="header">
+        <div class="logo"><img src="./Images/KSPL LOGO.png" alt=""></div>
+        <div class="search-bar"><input type="search" id="search-box" value=""><i class="fa fa-search" aria-hidden="true" id="search-icon"></i></div>
+        <div class="right-bar">
+            <div class="icon">
+                <!-- <i class="fa-solid fa-circle-half-stroke" id="icon"></i> -->
+            </div>
+            <div class="subscription"><a href="#" class="r">Subscription</a></div>
+            <div class="about"><a href="#" class="r" id="about">About Us</a></div>
+            <div class="contact"><a href="#" class="r">Contact Us</a></div>
+        </div>
+
+    </div>
+    <div class="cont">
+        <h3>Create Account</h3>
+        <form id="form" action="./homepage.php" method="post">
+            <!-- <label>First Name</label> -->
+            <input type="text" id="f-name" placeholder="Enter First Name" name="fname" >
+            <p id="f-name-validation" class="pass-checker"></p>
+            <!-- <label>Last Name</label> -->
+            <input type="text" id="l-name" placeholder="Enter Last Name" name="lname">
+            <p id="l-name-validation" class="pass-checker"></p>
+            <!-- <label>Date of Birth</label> -->
+            <input type="date" id="dob" name="dob">
+            <!-- <label for="Gender">Gender</label> -->
+            <select name="gender" id="select-gender" name="gender">
+                <option value="Male">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Male">Female</option>
+                <option value="Male">Other</option>
+            </select>
+            <!-- <label for="phoneno">Phone No.</label> -->
+            <input type="tel" id="phone" placeholder="Phone number" name="phone">
+            <!-- <label>Email</label> -->
+            <input type="email" id="email" placeholder="Enter Email" name="email">
+            <p id="emailval" class="pass-checker"></p>
+            <!-- <label>Password</label> -->
+            <input type="password" id="password" placeholder="Enter Password" name="password">
+            <p id="pass-div" class="pass-checker"></p>
+            <!-- <label>Confirm Password</label> -->
+            <input type="text" id="confirm-password" placeholder="Confirm Password">
+            <p id="same-pass" class="pass-checker"></p>
+            <div class="captcha"><input type="text" id="output"><i class="fa-sharp fa-solid fa-arrows-rotate" id="ref"></i></div>
+            <input type="text" id="input" placeholder="Enter Your Captcha">
+            <button id="sign-up" name="submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="firstrow">
+            <div class="enquiry"><h3>For any query</h3>
+            <p><i class="fa-solid fa-envelope"></i><a href = "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQHCzlqmkrZDDXDQPGlfbqFkHGhrxGNlgNzCcRsmgzNtGhmdkvrPqMjHkZzVTMXdzhGq">For any query</a></p>
+            <p><i class="fa-brands fa-whatsapp"></i><a>Whatsapp</a></p>
+            <p><i class="fa-solid fa-phone"></i><a>Phone</a></p>
+            </div>
+            <div class="services"><h3>Services</h3>
+            <ul>
+                <li>Software Development</li>
+                <li>Software Maintenence</li>
+                <li>Software Modification</li>
+            </ul>
+            </div>
+            <div class="terms-condition">
+                <h3>Terms and Conditions</h3>
+            </div>
+        <div class="about"><h3>About Us</h3>
+            <div class="adress">Sudhhowala<br>Dehradun(UK)</div>
+        </div>
+        <div class="logo"><img src="./Images/KSPL LOGO.png" alt=""></div>
+        </div>
+        <div class="secondrow">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <script src="./homePage.js"></script>
+</body>
+</html>
